@@ -1,0 +1,16 @@
+GlobalConfig:
+    input_data_path: 'D:/PycharmProjectsDD/NewRunAnalyzer/data/Activities.csv'
+    output_plots_folder: 'D:/PycharmProjectsDD/NewRunAnalyzer/Reports/Plots/'
+    output_report_folder: 'D:/PycharmProjectsDD/NewRunAnalyzer/Reports/'
+    rundate: 'today'
+
+
+DataConfig:
+    cols: ['Date','Title', 'Distance', 'Calories',
+           'Time', 'Avg HR', 'Max HR','Aerobic TE', 'Avg Run Cadence',
+           'Max Run Cadence', 'Avg Pace', 'Best Pace', 'Total Ascent',
+           'Total Descent', 'Avg Stride Length',
+           'Best Lap Time', 'Moving Time',
+           'Elapsed Time', 'Min Elevation', 'Max Elevation']
+       
+ 
