@@ -20,6 +20,6 @@ def hms_to_secs(time: pd.Series):
     """
     Converts time in the h:m:s format to seconds using the list_element_to_int fun
     """
-    temp = time.apply(lambda x: x.split('.')[0])  # remove decimals (all after .)
-    temp2 = temp.str.split(':')
+    temp = time.apply(lambda x: x.split(".")[0])  # remove decimals (all after .)
+    temp2 = temp.str.split(":")
     return temp2.apply(lambda x: list_element_to_int(x))
