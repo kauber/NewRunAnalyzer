@@ -1,4 +1,5 @@
 import logging
+import sys
 from datetime import datetime
 import os
 
@@ -23,11 +24,10 @@ def get_the_logger(log_name: str, logs_path: str, run_date: datetime) -> logging
         os.mkdir(dir_date)
 
     logging.basicConfig(
-        filename=dir_date_name,
-        filemode="w",  # appends
         format=f"%(levelname)s\t{today}\t%(asctime)s\t%(name)s"f"\t%(module)s\t%(funcName)s\t(lineno)d\t%(message)s",
         datefmt="%H:%M:%S",
-        level=logging.INFO
+        level=logging.INFO,
+        stream=sys.stdout
     )
 
     proj_logger = logging.getLogger(log_name)
