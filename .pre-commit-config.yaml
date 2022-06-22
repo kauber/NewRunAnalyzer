@@ -7,4 +7,12 @@ repos:
         language: system
         types: [python]
         require_serial: True
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        require_serial: True
+
+
 
