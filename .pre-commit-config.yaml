@@ -1,16 +1,10 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
-    hooks:
-    -   id: check-yaml
-#    -   id: end-of-file-fixer
-#    -   id: trailing-whitespace
--   repo: https://github.com/psf/black
-    rev: 22.3.0
+-   repo: local
     hooks:
     -   id: black
-#    -   id: pylint
-#        name: pylint
-#        entry: pylint
-#        language: system
-#        types: [ python ]
+        name: black
+        entry: black
+        language: system
+        types: [python]
+        require_serial: True
+
