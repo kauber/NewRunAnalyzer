@@ -1,5 +1,5 @@
 """
-Main script that controls the whole project
+Main script that controls the different parts of the project
 """
 
 import argparse
